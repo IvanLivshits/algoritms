@@ -33,7 +33,7 @@ The substring with start index = 2 is "ab", which is an anagram of "ab".
  * @return {number[]}
  */
 let findAnagrams = function(s, p) {
-    const anagramIndexes = [];
+    const anagramIndexes:number[] = [];
     const hashMap = new Object();
     for ( let i = 0; i < p.length; i++ ) {
         hashMap[p[i]] = (hashMap[p[i]] || 0) + 1;
